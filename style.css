@@ -1324,3 +1324,12 @@ footer::before{
   }
 
 }
+@media(min-width:992px){
+
+  .hero-content h1{
+    font-size: 76px;
+
+    line-height: 1.1;
+  }
+
+}
