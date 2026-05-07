@@ -386,6 +386,7 @@ a{
     display:flex;
   }
 
+}
   .feature-grid{
     grid-template-columns:1fr;
   }
@@ -1233,6 +1234,93 @@ footer::before{
     font-size: 13px;
 
     padding-top: 18px;
+  }
+
+}
+@media(max-width:768px){
+
+  /* SHOW NAV CONTAINER */
+
+  .nav-links{
+    display: flex !important;
+
+    position: static !important;
+
+    width: auto !important;
+
+    background: transparent !important;
+
+    padding: 0 !important;
+
+    flex-direction: row !important;
+  }
+
+  /* HIDE ALL NAV LINKS */
+
+  .nav-links a{
+    display: none !important;
+  }
+
+  /* SHOW ONLY SEND ENQUIRY BUTTON */
+
+  .nav-links .nav-btn{
+    display: inline-flex !important;
+
+    padding: 10px 16px;
+
+    font-size: 13px;
+
+    border-radius: 30px;
+  }
+
+}
+@media(max-width:768px){
+
+  .nav-wrapper{
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+  /* LOGO */
+
+  .logo{
+    gap: 8px;
+
+    flex: 1;
+
+    min-width: 0;
+  }
+
+  .logo img{
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo h2{
+    font-size: 18px;
+
+    white-space: nowrap;
+  }
+
+  .logo span{
+    font-size: 18px;
+  }
+
+  /* BUTTON */
+
+  .nav-links .nav-btn{
+    padding: 10px 14px !important;
+
+    font-size: 12px;
+
+    border-radius: 30px;
+
+    white-space: nowrap;
   }
 
 }
